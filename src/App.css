@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 전체 레이아웃 구성부분 */
+.wrap {
+  width: 1900px;
+  margin: auto;
+  height: 100vw;
+  background: #fbd5d5;
+}
+.wrap>.todo-list{padding-top:20px;}
+.wrap .todo-title>input
+{background: #efb5b5;
+  border: 1px solid #efb5b5;
+  height: 30px;
+  color: #ffffff;
+  width: 400px;
+  font-size:18px;
+  font-weight:500;
+}
+.wrap>.todo-list button
+{border: 1px solid #999797;
+  background: #999797;
+  height: 33px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Todo */
+.main {
+  margin: auto;
+  width: 1200px;
+  height: 100vh;
+}
+.main>h1 {
+  font-size: 35px;
+  text-align:center;
+  color:#ff4d22;
+}
+
+.main>.title {
+  font-size: 35px;
+  margin-left:95px;
+}
+
+.main>.todo-style {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1200px;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+  
+
+.main>.todo-style>.component-style {
+  border: 5px solid #ffd9d9;
+  background:#ffffff;
+  min-height: 227px;
+  flex-basis: 227px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 0;
+}
+
+.todo-style>.component-style>.buttons {
+  display: flex;
+}
+
+.todo-style>.component-style>.buttons>button {
+  background: #ffb4b4;
+  color: #ffffff;
+  border: none;
+  padding: 1px;
+  margin: 10px;
+  height: 30px;
+  font-size: 16px;
+  width: 78px;
+  font-weight: 800;
+}
+
+.component-style>.item-title {
+  width: 100%;
+  height: 3px;
+  font-size: 22px;
+}
+
+.component-style>.item-content {
+  font-size: 17px;
+}
+
